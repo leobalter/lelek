@@ -1,0 +1,86 @@
+body {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.wheel_container {
+  height: 420px;
+  width: 420px;
+  background: transparent;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.wheel {
+  border-radius: 50%;
+  background-color: black;
+  height: 90%;
+  width: 90%;
+  box-shadow: 0px 0px 15px 2px #000;
+  background-image: -webkit-linear-gradient(top, #555, #000); /* Chrome 10+, iOS 5+, Safari 5.1+ */
+  background-image:         linear-gradient(to top, #555, #000); /* Firefox 16+, IE 10+, Opera 12.50+ */
+  cursor: pointer;
+}
+
+.wheel_inner {
+  background: white;
+  border-radius: 50%;
+  height: 80%;
+  width: 80%;
+  box-shadow: 0px 0px 20px 4px #777;
+  border: 2px solid #333;
+}
+
+.wheel_inner div {
+  font-size: 80px;
+  font-family: Verdana, sans-serif;
+  text-align: center;
+   -webkit-transition: all 1s ease-out; 
+     -moz-transition: all 1s ease-out; 
+       -o-transition: all 1s ease-out; 
+          transition: all 1s ease-out; 
+}
+
+.flex_center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  display: -webkit-flex;
+  -webkit-align-items: center;
+  -webkit-justify-content: center;
+
+  display: -moz-flex;
+  -moz-align-items: center;
+  -moz-justify-content: center;
+}
+
+.transition {
+  -webkit-transition: all 3s ease-out; 
+     -moz-transition: all 3s ease-out; 
+       -o-transition: all 3s ease-out; 
+          transition: all 3s ease-out; 
+ 
+}
+
+.turn_right {
+  -webkit-transform: rotate(360deg); 
+          transform: rotate(360deg);
+}
+
+.turn_left {
+  -webkit-transform: rotate(-360deg); 
+          transform: rotate(-360deg);
+}
+
+#lelek {
+  display:none;
+}
